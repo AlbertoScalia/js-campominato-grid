@@ -1,0 +1,16 @@
+body {
+    background-color: #011627;
+}
+
+.btn {
+    background-color: greenyellow;
+}
+
+.btn:hover {
+    background-color: rgb(120, 200, 0);
+}
+
+.container {
+    width: 50%;
+    height: 50%;
+}
