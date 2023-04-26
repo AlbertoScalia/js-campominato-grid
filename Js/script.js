@@ -17,7 +17,23 @@ btnClick.addEventListener('click', function () {
         squareContainer.append(squareElement);
         i++;
     }
+
+    //Assegno una variabile alla classe delle celle
+    const squares = document.querySelectorAll('.square');
+
+    // Creo un ciclo per selezionare ciascuna cella
+    for (let i = 0; i < squares.length; i++) {
+        const squareSelector = squares[i];
+        //Creo un addEventListener per colorare ogni cella selezionata
+        squareSelector.addEventListener('click', function () {
+            squareSelector.classList.add('square_click');
+            //Messaggio in console con il numero della cella cliccata.
+            console.log(`Hai selezionato la casella n. ${squareSelector.innerHTML}.`);
+        })
+    }
+
 })
+
 
 
 
